@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>BBDBuyEU spreadsheet – dansk guide til størrelser, QC og fragt</title>
+  <meta name="description" content="Brug BBDBuyEU spreadsheet som indkøbsguide. Find sko og tøj efter kategori, tjek mål og QC-billeder, og regn den samlede pris til Danmark i DKK.">
+  <meta name="theme-color" content="#20234c">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="da_DK">
+  <meta property="og:title" content="BBDBuyEU spreadsheet – dansk guide til størrelser, QC og fragt">
+  <meta property="og:description" content="Ti varekategorier og praktiske råd om størrelser, produktlinks og levering til Danmark.">
+  <style>
+    :root{color-scheme:light;--ink:#20234c;--paper:#f8f6f1;--muted:#555973;--line:#d8d7df;--lime:#e6f68d}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.6 system-ui,sans-serif}
+    a{color:inherit}
+    a:focus-visible,summary:focus-visible{outline:3px solid #6948ce;outline-offset:4px}
+    img{display:block;width:100%;height:auto}
+    .wrap{width:min(70rem,calc(100% - 2rem));margin-inline:auto}
+    header{border-bottom:1px solid var(--line)}
+    .top{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding-block:.85rem;font-weight:650}
+    .brand{text-decoration:none;letter-spacing:.045em}
+    .hero{display:grid;grid-template-columns:1.25fr 1fr;margin-top:1rem;border-radius:1.25rem;overflow:hidden;background:var(--ink);color:#fff}
+    .intro{padding:clamp(1.4rem,5vw,3.6rem);align-self:center}
+    .intro p{max-width:43ch;color:#eeeefe}
+    .hero figure{margin:0;background:#fff;color:var(--ink);display:grid;align-content:center}
+    .hero img{aspect-ratio:4/3;object-fit:contain}
+    h1,h2,h3{line-height:1.12;margin:0;letter-spacing:-.025em}
+    h1{font-size:clamp(2.2rem,6vw,4.55rem);overflow-wrap:anywhere}
+    h2{font-size:clamp(1.65rem,3vw,2.4rem)}
+    h3{font-size:1.3rem}
+    p{margin:.75rem 0}
+    figcaption{padding:.55rem .9rem;color:var(--muted);font-size:.875rem}
+    .cta{display:inline-block;margin-top:.55rem;padding:.65rem 1rem;border-radius:.6rem;background:var(--lime);color:var(--ink);font-weight:750;text-decoration:none}
+    .cta:hover{text-decoration:underline}
+    section{margin-block:2.5rem}
+    .categories ul,.gallery{display:grid;gap:.65rem;padding:0;list-style:none}
+    .categories ul{grid-template-columns:repeat(5,minmax(0,1fr))}
+    .categories a{display:flex;align-items:center;height:100%;min-height:3.25rem;padding:.6rem .75rem;background:#fff;border:1px solid var(--line);border-radius:.6rem;text-decoration:none;font-weight:650}
+    .categories a:hover{background:var(--lime);text-decoration:underline}
+    .gallery{grid-template-columns:repeat(4,minmax(0,1fr))}
+    .gallery figure{margin:0;background:#fff;border:1px solid var(--line);border-radius:.75rem;overflow:hidden}
+    .gallery img{aspect-ratio:1;object-fit:contain}
+    .guides{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.85rem;margin-top:1rem}
+    .guides article{padding:1.1rem;background:#eeedf8;border-radius:.8rem}
+    .guides p:last-child{margin-bottom:0}
+    .faq{max-width:52rem}
+    .faq h2{margin-bottom:1rem}
+    details{border-bottom:1px solid var(--line);padding:.8rem 0}
+    summary{cursor:pointer;font-weight:700}
+    details p{max-width:65ch}
+    footer{border-top:1px solid var(--line);padding-block:1rem 1.5rem;color:var(--muted)}
+    @media(max-width:740px){
+      .hero{grid-template-columns:1fr}
+      .hero img{max-height:17rem}
+      .categories ul,.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}
+    }
+    @media(max-width:480px){.guides{grid-template-columns:1fr}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "name": "BBDBuyEU spreadsheet – dansk guide til størrelser, QC og fragt",
+        "description": "Dansk indkøbsguide med varekategorier og råd om produktlinks, mål, QC-billeder og levering til Danmark.",
+        "inLanguage": "da",
+        "audience": {
+          "@type": "Audience",
+          "geographicArea": {"@type": "Country", "name": "Danmark"}
+        },
+        "about": {"@type": "Thing", "name": "BBDBuyEU spreadsheet"}
+      },
+      {
+        "@type": "FAQPage",
+        "inLanguage": "da",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Hvad er et BBDBuyEU spreadsheet?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Det er en oversigt, der samler produktlinks, så du kan finde varer efter kategori og sammenligne dem. På denne side fører kategorierne til HipoBuyFind."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Hvordan vælger jeg den rigtige størrelse?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mål et stykke tøj eller et par sko, der passer dig, og sammenlign med sælgerens mål i centimeter for den konkrete variant."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Hvad viser QC-billeder?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "QC-billeder kan vise varens farve, syninger, mærkning og synlige fejl. Bed om nærbilleder ved tvivl. Brug billederne som supplement til mål og dokumentation fra sælgeren."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Hvordan beregner jeg den samlede pris til Danmark?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Læg varepris, fragt og oplyste gebyrer sammen, og omregn beløbet til DKK. Undersøg også, om moms, eventuel told eller et transportørgebyr kan komme oveni."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/gcowr/">
+</head>
+<body>
+  <!-- index.html
+       Søgegrundlag: Ti særskilte domæner fra webresultater for den nøjagtige søgefrase.
+       Googles første resultatside kunne ikke verificeres direkte.
+       Gennemgåede domæner: bbdbuyeu.net, bbdbuye.com, bbdbuy-sheet.com,
+       bbdbuyeureps.com, bbdbuyeus.com, bbdbuy.uk, bbdbuy-eu.com,
+       bbdbuyspreadsheet.com, rep.tools og bbdbuyeulinks.com.
+       Sekundære søgeord: BBDBuyEU produktlinks, BBDBuyEU sko,
+       BBDBuyEU QC-billeder, BBDBuyEU størrelsesguide, BBDBuyEU fragt til Danmark.
+       Relaterede søgefraser: find produktlinks efter kategori; sammenlign sneakers efter modelnummer;
+       tjek farvevariant på sko; mål indersålens længde; vælg skostørrelse i centimeter;
+       mål brystbredde på T-shirts; mål ryglængde på hættetrøjer; mål skulderbredde på jakker;
+       mål ærmelængde på en jakke; mål talje på bukser; sammenlign benlængde på bukser;
+       mål hovedomkreds til en kasket; tjek tryk på spillertrøjer; se syninger ved hælen;
+       bed om nærbillede af lynlås; tjek lås på armbånd; bed om dokumentation for ægthed;
+       få fragtpris for dansk postnummer; sammenlign vægt og volumenvægt;
+       beregn samlet pris i DKK; tjek forventet leveringstid; tjek pakkesporing og returvilkår.
+  -->
+  <header>
+    <div class="wrap top">
+      <a class="brand" href="https://www.hipobuyfind.com">HipoBuyFind</a>
+      <a href="https://www.hipobuyfind.com">Åbn kataloget</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="hero">
+      <div class="intro">
+        <h1>BBDBuyEU spreadsheet</h1>
+        <p>Find sko, tøj og tilbehør efter kategori. Sammenlign mål, tjek produktbilleder, og beregn den samlede pris til Danmark, før du bestiller.</p>
+        <a class="cta" href="https://www.hipobuyfind.com">Se varer på HipoBuyFind</a>
+      </div>
+      <figure>
+        <img src="https://cdn.shopify.com/s/files/1/0603/3031/1875/products/main-square_84149fe4-595d-4af7-b544-eeb84a6c535d.jpg?v=1696326959&amp;width=760" width="760" height="760" alt="Sort Nike Air Max Invigor med hvidt Swoosh-logo set fra siden" loading="eager" fetchpriority="high">
+        <figcaption>Nike Air Max Invigor · billedeksempel</figcaption>
+      </figure>
+    </div>
+
+    <section class="categories" aria-labelledby="kategorier">
+      <h2 id="kategorier">Vælg en kategori</h2>
+      <nav aria-label="Varekategorier på HipoBuyFind">
+        <ul>
+          <li><a href="https://hipobuyfind.com/category-911-Shoes.html">Sko</a></li>
+          <li><a href="https://hipobuyfind.com/category-912-Hoodies%2FSweaters.html">Hættetrøjer og strik</a></li>
+          <li><a href="https://hipobuyfind.com/category-913-T-Shirts.html">T-shirts</a></li>
+          <li><a href="https://hipobuyfind.com/category-914-Jackets.html">Jakker</a></li>
+          <li><a href="https://hipobuyfind.com/category-915-Pants%2FShorts.html">Bukser og shorts</a></li>
+          <li><a href="https://hipobuyfind.com/category-916-Headwear.html">Caps og hovedbeklædning</a></li>
+          <li><a href="https://hipobuyfind.com/category-917-Sets.html">Tøjsæt</a></li>
+          <li><a href="https://hipobuyfind.com/category-918-underwear%2Funderpants.html">Undertøj</a></li>
+          <li><a href="https://hipobuyfind.com/category-919-Jersey.html">Spillertrøjer</a></li>
+          <li><a href="https://hipobuyfind.com/category-920-Accessories.html">Tilbehør og smykker</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <section aria-labelledby="koebsguide">
+      <h2 id="koebsguide">Dansk købsguide</h2>
+      <div class="guides">
+        <article>
+          <h3>Find det rigtige produktlink</h3>
+          <p>Start med varetypen og modelnavnet. Ved sneakers kan et modelnummer skelne to farvevarianter. Kontrollér, at produktlinket åbner den samme model, farve og størrelse, som du har valgt. Ved spillertrøjer kan du også tjekke tryk, navn og nummer på ryggen.</p>
+        </article>
+        <article>
+          <h3>Brug størrelsesguiden i centimeter</h3>
+          <p>Sammenlign indersålens længde, når du vælger skostørrelse. For T-shirts og hættetrøjer kan du måle brystbredde og ryglængde på dit eget tøj. Tjek skulderbredde og ærmelængde på jakker, taljemål og benlængde på bukser samt hovedomkreds og lukning på caps.</p>
+        </article>
+        <article>
+          <h3>Tjek QC-billeder og materialer</h3>
+          <p>Se efter syninger ved hæl og tå på sko, og bed om et nærbillede af lynlåsen på en jakke. Ved smykker er lås, overflade og mål værd at kontrollere. Hvis ægthed er vigtig for dit køb, så bed sælgeren om dokumentation for den konkrete vare.</p>
+        </article>
+        <article>
+          <h3>Regn fragt til Danmark med</h3>
+          <p>Spørg efter en fragtpris for dit postnummer og pakkens mål. Sammenlign faktisk vægt med volumenvægt, hvis transportøren oplyser begge. Regn totalprisen i DKK, og tjek forventet leveringstid, pakkesporing og returvilkår før betaling.</p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="modelbilleder">
+      <h2 id="modelbilleder">Modeller og detaljer at sammenligne</h2>
+      <p>Modelbillederne illustrerer forskellige varetyper. Se den konkrete varebeskrivelse for mål, materialer og tilgængelighed.</p>
+      <div class="gallery">
+        <figure>
+          <img src="https://pursuitcolombia.com/cdn/shop/files/IMG_0182.jpg?v=1752521778&amp;width=420" width="420" height="420" alt="Dior B23-sneaker med højt skaft" loading="lazy" decoding="async">
+          <figcaption>Dior B23 · skaft og sål</figcaption>
+        </figure>
+        <figure>
+          <img src="https://en.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-monogram-denim-jacket--FVJA29EFY610_PM2_Front%20view.png?hei=420&amp;wid=420" width="420" height="420" alt="Louis Vuitton Monogram-denimjakke set forfra" loading="lazy" decoding="async">
+          <figcaption>Louis Vuitton · snit og mønster</figcaption>
+        </figure>
+        <figure>
+          <img src="https://media.gucci.com/style/HEXFBFBFB_South_0_160_640x640/1751298339/838745_3HBC4_2600_001_100_0000_Light.jpg" width="640" height="640" alt="Beige Gucci-kasket i GG-kanvas" loading="lazy" decoding="async">
+          <figcaption>Gucci · kanvas og skygge</figcaption>
+        </figure>
+        <figure>
+          <img src="https://kream-phinf.pstatic.net/MjAyNTA3MzFfNzAg/MDAxNzUzODk4MTE1MjI3.WHGujKqNd9mT7aHEnAwoupW_atTkD6iQczFjUwc4HVMg.QIMaa4Wt7_-kLRs4KpRV-NQhSMFSfTE8Ggprf8CyWYwg.PNG/a_2fba6b33de3f40fc847572fc7a5614b4.png" width="420" height="420" alt="Hermès Clic H-armbånd med orange emalje og guldfarvet H-lås" loading="lazy" decoding="async">
+          <figcaption>Hermès Clic H · emalje og lås</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="faq" aria-labelledby="faq">
+      <h2 id="faq">Spørgsmål og svar</h2>
+      <details open>
+        <summary>Hvad er et BBDBuyEU spreadsheet?</summary>
+        <p>Det er en oversigt, der samler produktlinks, så du kan finde varer efter kategori og sammenligne dem. På denne side fører kategorierne til HipoBuyFind.</p>
+      </details>
+      <details>
+        <summary>Hvordan vælger jeg den rigtige størrelse?</summary>
+        <p>Mål et stykke tøj eller et par sko, der passer dig, og sammenlign med sælgerens mål i centimeter for den konkrete variant.</p>
+      </details>
+      <details>
+        <summary>Hvad viser QC-billeder?</summary>
+        <p>QC-billeder kan vise varens farve, syninger, mærkning og synlige fejl. Bed om nærbilleder ved tvivl. Brug billederne som supplement til mål og dokumentation fra sælgeren.</p>
+      </details>
+      <details>
+        <summary>Hvordan beregner jeg den samlede pris til Danmark?</summary>
+        <p>Læg varepris, fragt og oplyste gebyrer sammen, og omregn beløbet til DKK. Undersøg også, om moms, eventuel told eller et transportørgebyr kan komme oveni.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>Uafhængig indkøbsguide med kategorilinks til <a href="https://www.hipobuyfind.com">HipoBuyFind</a>.</p>
+    </div>
+  </footer>
+</body>
+</html>
